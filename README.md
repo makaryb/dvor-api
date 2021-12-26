@@ -27,13 +27,23 @@ pip3 install -r requirements.txt
 Run server
 
 ```shell
-uvicorn common.api:app
+./run_server.sh
 ```
 
 Test server
 
 ```shell
 pytest -v -s
+```
+
+API docs
+
+```
+GET $BASE_URL/docs
+
+or
+
+GET $BASE_URL/redoc
 ```
 
 ### Languages, libraries and tools used

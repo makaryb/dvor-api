@@ -1,8 +1,8 @@
 import pytest
 from fastapi.testclient import TestClient
 
-from api import (
-    app as dvor_app
+from common.api import (
+    app
 )
 from support.http_status_codes import (
     CODE_200_OK
@@ -11,7 +11,7 @@ from support.http_status_codes import (
 
 @pytest.fixture
 def client():
-    with TestClient(dvor_app) as client:
+    with TestClient(app) as client:
         yield client
 
 
