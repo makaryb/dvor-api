@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# But not Python files...
+!.gitignore
+!*.py
+!*.txt
+!README.md
+!LICENSE
+
+# ...even if they are in subdirectories
+!*/
+
+# Ignore system files
+*.idea
+*venv
